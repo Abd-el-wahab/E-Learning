@@ -10,7 +10,7 @@ $factory->define(App\Student::class, function (Faker $faker) {
         'card_id' => $faker->numberBetween(1,10),
         'e_mail' => $faker->unique()->safeEmail,
         'password' => bcrypt($faker->password),
-        'year_id' => $faker->name,
+        'year_id' => $faker->numberBetween(1,4),
         'course_id' => $faker->numberBetween(1,10),
     ];
 });

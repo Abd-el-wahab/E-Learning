@@ -21,7 +21,7 @@ class CreateStudentsTable extends Migration
             $table->integer('card_id')->unique();
             $table->string('e_mail')->unique();
             $table->string('password');
-            $table->string('year_id')->nullable();
+            $table->integer('year_id');
             $table->integer('course_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
