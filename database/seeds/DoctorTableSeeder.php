@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+// use App\Doctor;
 
 class DoctorTableSeeder extends Seeder
 {
@@ -12,5 +13,18 @@ class DoctorTableSeeder extends Seeder
     public function run()
     {
         factory(App\Doctor::class , 3)->create();
+
+        // Doctor::create([
+        //     'firstname'=>'lamia',
+        //     'lastname'=>'sayed',
+        //     'username'=>'lamiasayed',
+        //     'card_id'=>'12',
+        //     'e_mail'=>'lamia@gmail.com',
+        //     'password'=>Hash::make('doctor'),
+        //     'year_id'=>'1',
+        //     'course_id'=>'2',
+        //     'remember_token'=> str_random(10)
+
+        // ]);
     }
 }

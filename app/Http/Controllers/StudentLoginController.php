@@ -41,7 +41,7 @@ class StudentLoginController extends Controller
         $student->username = $request->input('username');
         $student->card_id = $request->input('card_id');
         $student->e_mail = $request->input('e_mail');
-        $student->password = $request->input('password');
+        $student->password = bcrypt($request->input('password'));
         $student->year_id = $request->input('year_id');
         $student->course_id = $request->input('course_id');
 

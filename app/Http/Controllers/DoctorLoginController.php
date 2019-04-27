@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Doctor;
+use Validator;
+use Auth;
 use App\Http\Resources\Doctor as DoctorResource;
 
 class DoctorLoginController extends Controller
@@ -35,7 +37,7 @@ class DoctorLoginController extends Controller
         $doctor->username = $request->input('username');
         $doctor->card_id = $request->input('card_id');
         $doctor->e_mail = $request->input('e_mail');
-        $doctor->password = $request->input('password');
+        $doctor->password = bcrypt($request->input('password'));
         $doctor->year_id = $request->input('year_id');
         $doctor->course_id = $request->input('course_id');
 

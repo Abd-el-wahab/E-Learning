@@ -8,16 +8,16 @@ class Doctor extends Model
 {
     //
 
-    protected $fillable = [
-        'firstname',
-        'lastname',
-        'username',
-        'doctor_id',
-        'e_mail',
-        'password',
-        'year_id',
-        'course_id'
-    ];
+    // protected $fillable = [
+    //     'firstname',
+    //     'lastname',
+    //     'username',
+    //     'doctor_id',
+    //     'e_mail',
+    //     'password',
+    //     'year_id',
+    //     'course_id'
+    // ];
 
     public function posts(){
 

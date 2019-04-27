@@ -17,12 +17,12 @@ class CreateDoctorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('username');
+            $table->string('username')->nullable();
             $table->integer('card_id')->unique();
             $table->string('e_mail')->unique();
             $table->string('password');
-            $table->string('year_id');
-            $table->integer('course_id');
+            $table->string('year_id')->nullable();
+            $table->integer('course_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
