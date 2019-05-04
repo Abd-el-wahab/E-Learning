@@ -117,7 +117,8 @@ $user_data = array(
 
 if(Auth::attempt($user_data))
     {
-    return'done';
+        return redirect()->away('https://www.google.com');
+   // return'Successlogin';
    //  return redirect('/main/successlogin');
     // }
     // else

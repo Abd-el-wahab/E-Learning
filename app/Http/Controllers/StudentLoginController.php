@@ -97,13 +97,13 @@ class StudentLoginController extends Controller
 
 // Student Login
 
-function login()
+function loginstudent()
         {
              return view('login');
         }
 
 
-function checklogin(Request $request)
+function checkloginstudent(Request $request)
         {
 
         $this->validate($request , [
@@ -119,7 +119,8 @@ function checklogin(Request $request)
 
         if(Auth::attempt($user_data))
             {
-            return'done';
+                
+            return'Successlogin Student';
            //  return redirect('/main/successlogin');
             // }
             // else

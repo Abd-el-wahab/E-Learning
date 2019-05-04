@@ -20,12 +20,12 @@ Route::get('/', function () {
 
 // Student login
 
-Route::get('/login', 'StudentLoginController@login');
-Route::post('/checklogin', 'StudentLoginController@checklogin');
+Route::get('/login', 'StudentLoginController@loginstudent');
+Route::post('/checklogin', 'StudentLoginController@checkloginstudent');
 Route::get('/main/successlogin', 'StudentLoginController@successlogin');
 Route::get('/logout', 'StudentLoginController@logout');
 
 // Doctor login
-
-Route::post('/checklogin', 'DoctorLoginController@checklogin');
-Route::get('/logout', 'DoctorLoginController@logout');
+ 
+// Route::post('/checklogin', 'DoctorLoginController@checklogin');
+// Route::get('/logout', 'DoctorLoginController@logout');
