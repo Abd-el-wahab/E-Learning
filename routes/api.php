@@ -47,7 +47,7 @@ Route::put('doctor' , 'DoctorLoginController@store');
 // Delete Doctor
 Route::delete('doctor/{id}' , 'DoctorLoginController@destroy');
 // Doctor Login
-Route::post('logindoctor' , 'DoctorLoginController@checklogin');
+Route::post('logindoctor' , 'DoctorLoginController@checklogindoctor');
 
 
 

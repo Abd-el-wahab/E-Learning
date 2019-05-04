@@ -101,7 +101,7 @@ function login()
 }
 
 
-function checklogin(Request $request)
+function checklogindoctor(Request $request)
 {
 
 $this->validate($request , [
@@ -117,7 +117,8 @@ $user_data = array(
 
 if(Auth::attempt($user_data))
     {
-        return redirect()->away('https://www.google.com');
+        return'Successlogin Doctor';
+        // return redirect()->away('https://www.google.com');
    // return'Successlogin';
    //  return redirect('/main/successlogin');
     // }
