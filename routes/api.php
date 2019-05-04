@@ -30,7 +30,7 @@ Route::put('student' , 'StudentLoginController@store');
 // Delete Student
 Route::delete('student/{id}' , 'StudentLoginController@destroy');
 // Student Login
-Route::post('login' , 'StudentLoginController@checklogin');
+Route::post('login' , 'StudentLoginController@checkloginstudent');
 
 
 

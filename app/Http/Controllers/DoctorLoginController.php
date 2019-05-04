@@ -36,7 +36,7 @@ class DoctorLoginController extends Controller
         $doctor->lastname = $request->input('lastname');
         $doctor->username = $request->input('username');
         $doctor->card_id = $request->input('card_id');
-        $doctor->e_mail = $request->input('e_mail');
+        $doctor->email = $request->input('email');
         $doctor->password = bcrypt($request->input('password'));
         $doctor->year_id = $request->input('year_id');
         $doctor->course_id = $request->input('course_id');

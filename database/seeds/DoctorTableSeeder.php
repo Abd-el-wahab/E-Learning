@@ -19,7 +19,7 @@ class DoctorTableSeeder extends Seeder
         //     'lastname'=>'sayed',
         //     'username'=>'lamiasayed',
         //     'card_id'=>'12',
-        //     'e_mail'=>'lamia@gmail.com',
+        //     'email'=>'lamia@gmail.com',
         //     'password'=>Hash::make('doctor'),
         //     'year_id'=>'1',
         //     'course_id'=>'2',

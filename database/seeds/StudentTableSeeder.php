@@ -12,14 +12,14 @@ class StudentTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Student::class , 3)->create();
+        factory(App\Student::class , 2)->create();
 
         Student::create([
             'firstname'=>'abdulwahab',
             'lastname'=>'moahemd',
             'username'=>'abdulwasayedhab',
             'card_id'=>'110',
-            'e_mail'=>'tests@gmail.com',
+            'email'=>'tests@gmail.com',
             'password'=>Hash::make('hello'),
             'year_id'=>'1',
             'course_id'=>'2',
