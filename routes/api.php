@@ -34,6 +34,11 @@ Route::post('login' , 'StudentLoginController@checkloginstudent');
 
 
 
+// Route::post('auth' , 'StudentLoginController@auth');
+
+
+
+
 // Doctor SignUp
 
 // List Doctors

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Doctor;
@@ -37,7 +38,8 @@ class DoctorLoginController extends Controller
         $doctor->username = $request->input('username');
         $doctor->card_id = $request->input('card_id');
         $doctor->email = $request->input('email');
-        $doctor->password = bcrypt($request->input('password'));
+        // $doctor->password = bcrypt($request->input('password'));
+        $doctor->password = Hash::make($request->input('password'));
         $doctor->year_id = $request->input('year_id');
         $doctor->course_id = $request->input('course_id');
 
@@ -93,57 +95,72 @@ class DoctorLoginController extends Controller
     }
     }
 
+            // Doctor Login
+
+    function checklogindoctor(Request $request)
+    {
+        $email = $request->email;
+        $password = $request->password;
+        $doctor = Doctor::where('email', $email)->firstOrFail();
+        if(Hash::check($password, $doctor->password))
+        {
+        return response()->json([$doctor]);
+        }
+        else
+        return 'Error Not Working';
+    }
+
     // Doctor Login
 
-function login()
-{
-     return view('login');
-}
+// function login()
+// {
+//      return view('login');
+// }
 
 
-function checklogindoctor(Request $request)
-{
+// function checklogindoctor(Request $request)
+// {
 
-$this->validate($request , [
-    'email' => 'required|email',
-    'password' => 'required|alphaNum|min:3'
+// $this->validate($request , [
+//     'email' => 'required|email',
+//     'password' => 'required|alphaNum|min:3'
 
-]);
+// ]);
 
-$user_data = array(
-    'email'  => $request->get('email'),
-    'password' => $request->get('password')
-   );
+// $user_data = array(
+//     'email'  => $request->get('email'),
+//     'password' => $request->get('password')
+//    );
 
-if(Auth::attempt($user_data))
-    {
-        return'Successlogin Doctor';
-        // return redirect()->away('https://www.google.com');
-   // return'Successlogin';
-   //  return redirect('/main/successlogin');
-    // }
-    // else
-    // {
-    //   return back()->with('error', 'Wrong Login Details');
-    // }
-}
+// if(Auth::attempt($user_data))
+//     {
+//         return'Successlogin Doctor';
+//         // return redirect()->away('https://www.google.com');
+//    // return'Successlogin';
+//    //  return redirect('/main/successlogin');
+//     // }
+//     // else
+//     // {
+//     //   return back()->with('error', 'Wrong Login Details');
+//     // }
+// }
 
-}
+// }
 
 
 
-function successlogin()
-{
+// function successlogin()
+// {
 
-return redirect()->away('https://www.google.com');
+// return redirect()->away('https://www.google.com');
 
-}
+// }
 
-function logout()
-{
-Auth::logout();
-return redirect('login');
-}
+// function logout()
+// {
+// Auth::logout();
+// return redirect('login');
+// }
 
 
 }

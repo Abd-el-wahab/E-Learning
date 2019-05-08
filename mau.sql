@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2019 at 11:31 AM
+-- Generation Time: May 04, 2019 at 03:21 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -58,54 +58,54 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`id`, `year_id`, `name`, `doctor_id`, `created_at`, `updated_at`) VALUES
-(1, 8, 'Prof. Demond Hahn V', 8, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(2, 6, 'Grant Robel IV', 3, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(3, 6, 'Ms. Allison Parker', 3, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(4, 4, 'Ms. Marlee Tromp MD', 10, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(5, 5, 'Aisha Legros DVM', 9, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(6, 7, 'Nicholas Runolfsson', 9, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(7, 6, 'Ernestina Stracke Sr.', 1, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(8, 10, 'Prof. Tiana Gislason Sr.', 2, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(9, 4, 'Forest Wehner', 7, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(10, 3, 'Mr. Randy Osinski', 9, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(11, 6, 'Mrs. Anissa Harber III', 4, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(12, 6, 'Einar Erdman', 9, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(13, 3, 'Elmira Huels Sr.', 6, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(14, 6, 'Dariana Littel', 9, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(15, 6, 'Dr. Tanner Bayer', 6, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(16, 9, 'Clark Sawayn DVM', 1, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(17, 1, 'Antwon Towne', 3, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(18, 8, 'Nakia Schmitt', 10, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(19, 7, 'Prof. Tracey Lind', 8, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(20, 8, 'Nicola Murray', 3, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(21, 5, 'Paula Bins', 5, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(22, 2, 'Dakota Goldner III', 9, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(23, 9, 'Laverna Monahan', 5, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(24, 6, 'Destinee Schinner', 6, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(25, 3, 'Lenore Yundt', 4, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(26, 8, 'Jeremy Waters', 4, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(27, 7, 'Mrs. Sister Corwin I', 4, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(28, 6, 'Hettie Tromp PhD', 7, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(29, 8, 'Mr. Kennedy Swaniawski', 10, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(30, 5, 'Geraldine Reinger', 3, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(31, 1, 'Verla Grant', 8, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(32, 3, 'Domenica Wuckert', 9, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(33, 1, 'Mr. Warren Crona', 3, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(34, 3, 'Dr. Jaron Corwin III', 6, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(35, 8, 'Alisha Aufderhar', 2, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(36, 6, 'Sabina Homenick', 10, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(37, 3, 'Kiley Zulauf', 4, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(38, 2, 'Theodore Hagenes', 1, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(39, 4, 'Dr. Catharine Nitzsche', 2, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(40, 1, 'Oswaldo Gibson', 8, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(41, 3, 'Orin Smitham', 3, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(42, 4, 'Elsie Nienow', 9, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(43, 1, 'Dr. Maureen Sauer Sr.', 9, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(44, 8, 'Mr. Korbin Wiegand DDS', 3, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(45, 7, 'Prof. Tito Cremin', 8, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(46, 10, 'Dr. Kiera Jacobs DVM', 3, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(47, 2, 'Melyna Rempel', 8, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(48, 7, 'Ashlynn Reichert Jr.', 8, '2019-04-12 12:05:11', '2019-04-12 12:05:11');
+(1, 9, 'Dr. Heber Hintz', 10, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(2, 10, 'Prof. Kian Turcotte', 4, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(3, 7, 'Jakob Nader I', 7, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(4, 10, 'Pasquale Ledner', 3, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(5, 7, 'Dr. David Jacobson', 7, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(6, 9, 'Demarco Schiller', 4, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(7, 10, 'Dante Stehr III', 1, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(8, 10, 'Chasity Will', 6, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(9, 5, 'Theodora Murazik', 6, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(10, 2, 'Morris Spinka', 7, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(11, 2, 'Hunter Botsford', 4, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(12, 9, 'Dwight Will', 8, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(13, 7, 'Prof. Whitney Kreiger', 8, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(14, 6, 'Tyrese Halvorson', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(15, 1, 'Dr. Frederik Ryan', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(16, 6, 'Dr. Vergie Klein IV', 4, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(17, 10, 'Demario Lemke MD', 6, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(18, 8, 'Amir Crona', 9, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(19, 1, 'Darrell Kovacek', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(20, 2, 'Mariam Stroman', 1, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(21, 4, 'Prof. Jada Hermann V', 9, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(22, 5, 'Mrs. Eda Mayer', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(23, 4, 'Ebony Jacobi', 1, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(24, 6, 'Cristal Stamm', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(25, 2, 'Ms. Madisyn Wunsch I', 5, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(26, 2, 'Dr. Torrance Grady I', 5, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(27, 8, 'Marilou Gorczany', 2, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(28, 5, 'Wilford Lubowitz', 7, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(29, 1, 'Maud Trantow', 6, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(30, 8, 'Kenyatta Ebert', 9, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(31, 2, 'Dario O\'Hara', 1, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(32, 1, 'Garrett Marks PhD', 8, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(33, 9, 'Ayden Dickinson', 8, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(34, 6, 'Frederique Hickle', 2, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(35, 7, 'Reed Schaefer', 2, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(36, 10, 'Ms. Zola Schoen Sr.', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(37, 6, 'Kenton Armstrong', 3, '2019-05-04 10:51:30', '2019-05-04 10:51:30'),
+(38, 2, 'Tobin Mante', 10, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(39, 4, 'Mathilde Wyman', 10, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(40, 9, 'Prof. Loyal Welch', 6, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(41, 1, 'Adolphus Keeling', 2, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(42, 1, 'Nyah Dach', 4, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(43, 9, 'Miss Angie Senger Sr.', 10, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(44, 10, 'Zelma Harris', 4, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(45, 8, 'Orrin Jaskolski I', 1, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(46, 6, 'Lulu Blanda', 6, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(47, 1, 'Florence McGlynn III', 4, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(48, 3, 'Jana Upton', 8, '2019-05-04 10:51:31', '2019-05-04 10:51:31');
 
 -- --------------------------------------------------------
 
@@ -117,12 +117,12 @@ CREATE TABLE `doctors` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `firstname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `lastname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `username` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `card_id` int(11) NOT NULL,
-  `e_mail` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `year_id` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `course_id` int(11) NOT NULL,
+  `year_id` int(11) NOT NULL,
+  `course_id` int(11) DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -132,10 +132,10 @@ CREATE TABLE `doctors` (
 -- Dumping data for table `doctors`
 --
 
-INSERT INTO `doctors` (`id`, `firstname`, `lastname`, `username`, `card_id`, `e_mail`, `password`, `year_id`, `course_id`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Candida Blanda', 'Mallie Towne', 'Mr. Lonnie Bailey I', 5, 'vmonahan@example.net', '$2y$10$7VzcXjDZdMm0y4BDosmnUeHG28DEvZ8/8J9oky1qTB4tBUa2oXoWO', 'Danny Steuber PhD', 7, NULL, '2019-04-12 12:05:09', '2019-04-12 12:05:09'),
-(2, 'Elwin Graham', 'Cordell Aufderhar', 'Adolphus Bashirian', 2, 'sharon.schumm@example.org', '$2y$10$GWzE4V61.ijOVY2uQQ0.CeYsUqlaN4/K6AIEMDw0n7V34uRybkhb6', 'Ms. Nellie Lakin', 5, NULL, '2019-04-12 12:05:10', '2019-04-12 12:05:10'),
-(3, 'Graham Koepp', 'Maegan Hayes', 'Rosalinda Sipes', 10, 'ayla97@example.net', '$2y$10$yHmFyNIuVfHNYdk0araZ1.An1ngxBY3tqsvpEJgcuiKbahTV0.7fi', 'Toni Denesik', 4, NULL, '2019-04-12 12:05:10', '2019-04-12 12:05:10');
+INSERT INTO `doctors` (`id`, `firstname`, `lastname`, `username`, `card_id`, `email`, `password`, `year_id`, `course_id`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Alyson Gutkowski', 'Ms. Margot Lebsack V', 'Robert Barton', 6, 'rstroman@example.org', '$2y$10$iWJRDKVwto4kBGlbEt4EWeyF1qiVhZNYwrUzy8xfcNvb5EFJ4PZkS', 1, 5, NULL, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(2, 'Mr. Lexus Balistreri', 'Prof. Greyson Crona Jr.', 'Prof. Spencer Bruen V', 1, 'camilla.hagenes@example.net', '$2y$10$kpB1CuBhKZ4jnOR8AVvyIO1Yw3qFF1aiASmIndygauWMYHP/F6IK6', 3, 6, NULL, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(3, 'lamia', 'sayed', 'lamiasayed', 12, 'lamia@gmail.com', '$2y$10$tBhQN9g4aCA2YVfSkmNJIOEjGyeD9wdtxtY16n56ny2YCN/KXHaXu', 1, 2, 'FtkvkZiNK3', '2019-05-04 10:51:29', '2019-05-04 10:51:29');
 
 -- --------------------------------------------------------
 
@@ -214,16 +214,16 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `description`, `doctor_id`, `created_at`, `updated_at`) VALUES
-(1, 'Vel suscipit numquam quis. Harum corrupti eaque incidunt quia.', 10, '2019-04-12 12:05:11', '2019-04-12 12:05:11'),
-(2, 'Magnam est qui maiores qui fuga consequatur repudiandae commodi. Ut possimus quidem amet magni commodi blanditiis quisquam.', 10, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(3, 'Aut suscipit in recusandae error enim. Sint qui rem animi placeat.', 8, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(4, 'Fugiat assumenda nobis perspiciatis ea. Et sapiente aliquid quia sit eaque tenetur.', 1, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(5, 'Sint doloremque tenetur ut deleniti dignissimos. Sed dolorem aut quos odit repellendus.', 8, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(6, 'Officiis corporis quibusdam ullam ipsum. Aut explicabo suscipit tempora quo.', 6, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(7, 'Distinctio ut optio ut.', 7, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(8, 'Non autem sequi repudiandae consequatur dolorem. Maiores sequi quos distinctio est quia.', 6, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(9, 'Nam aut sit nostrum aperiam.', 7, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(10, 'Maiores error alias et saepe quibusdam ullam eaque. Occaecati ut quidem aut nulla sit.', 10, '2019-04-12 12:05:12', '2019-04-12 12:05:12');
+(1, 'Et sed accusamus optio atque aliquid. Quibusdam odit veniam nihil.', 3, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(2, 'Ea earum harum adipisci ad eius quia veritatis nemo.', 8, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(3, 'Quia inventore illo ut qui quam et fugiat. Qui cum consequuntur quo qui.', 7, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(4, 'Debitis eaque atque enim delectus saepe.', 3, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(5, 'Quia minima nemo architecto odio molestiae asperiores.', 3, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(6, 'Nobis et quaerat harum fugiat aut ipsum adipisci. Quae natus aperiam mollitia sit in non voluptates.', 3, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(7, 'Provident nisi et natus incidunt amet. Aut et deserunt perferendis voluptatum quo id tempore quia.', 2, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(8, 'Reiciendis et et impedit temporibus quis soluta cupiditate nulla.', 6, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(9, 'Ducimus animi quis delectus quam.', 9, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(10, 'Voluptatem quia non in vel eveniet eaque fugiat.', 1, '2019-05-04 10:51:31', '2019-05-04 10:51:31');
 
 -- --------------------------------------------------------
 
@@ -246,16 +246,16 @@ CREATE TABLE `quizzes` (
 --
 
 INSERT INTO `quizzes` (`id`, `quiz_id`, `title`, `content`, `grades`, `created_at`, `updated_at`) VALUES
-(1, 3, 'Gladyce Prohaska', 'Carrie Bartell', 2, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(2, 10, 'Mariam Schroeder PhD', 'Dr. Ivory Kozey DDS', 4, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(3, 6, 'Mr. Benton Effertz', 'Roderick Kuphal', 2, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(4, 1, 'Amelia Schultz', 'Aletha Johnston', 1, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(5, 10, 'Prof. Melany Mueller II', 'Miss Alanis Schmeler II', 9, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(6, 9, 'Tevin DuBuque', 'Jefferey Thompson', 4, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(7, 9, 'Dolly Mayer Sr.', 'Mr. Nathan Jacobi IV', 10, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(8, 1, 'Bradley Hickle', 'Oleta Mitchell PhD', 1, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(9, 5, 'Miss Shayna Hettinger', 'Gardner Bauch', 8, '2019-04-12 12:05:12', '2019-04-12 12:05:12'),
-(10, 3, 'Elmira Grimes', 'Theodore Fritsch DDS', 2, '2019-04-12 12:05:12', '2019-04-12 12:05:12');
+(1, 1, 'Callie Olson', 'Luna Hill', 1, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(2, 8, 'Angela Gutmann', 'Hayden Walsh', 4, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(3, 2, 'Earnestine Rau DVM', 'Eloise Keebler', 6, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(4, 7, 'Dr. Alexzander Harber', 'Dock Wisozk DVM', 9, '2019-05-04 10:51:31', '2019-05-04 10:51:31'),
+(5, 8, 'Dr. Cade Schamberger V', 'Okey Flatley', 5, '2019-05-04 10:51:32', '2019-05-04 10:51:32'),
+(6, 8, 'Dr. Jenifer Yundt Jr.', 'Ms. Calista Jacobson DVM', 6, '2019-05-04 10:51:32', '2019-05-04 10:51:32'),
+(7, 10, 'Dr. Glen Ondricka Sr.', 'Wilber Feil', 4, '2019-05-04 10:51:32', '2019-05-04 10:51:32'),
+(8, 2, 'Rosella Spinka', 'Andreane Wiza Sr.', 7, '2019-05-04 10:51:32', '2019-05-04 10:51:32'),
+(9, 5, 'Constantin Hills', 'Elenora Lockman III', 4, '2019-05-04 10:51:32', '2019-05-04 10:51:32'),
+(10, 5, 'Casey Connelly', 'Candice Dooley PhD', 9, '2019-05-04 10:51:32', '2019-05-04 10:51:32');
 
 -- --------------------------------------------------------
 
@@ -267,12 +267,12 @@ CREATE TABLE `students` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `firstname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `lastname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `username` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `card_id` int(11) NOT NULL,
-  `e_mail` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `year_id` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `course_id` int(11) NOT NULL,
+  `year_id` int(11) NOT NULL,
+  `course_id` int(11) DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -282,13 +282,10 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `firstname`, `lastname`, `username`, `card_id`, `e_mail`, `password`, `year_id`, `course_id`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Carlee Donnelly', 'Claire Watsica', 'Antwan Jacobson', 7, 'boyer.murl@example.org', '$2y$10$9qDpjjHsQLygfczY3.qOpui.vTI5/WeuR3Ig761BmfvSxheTerG06', 'Miss Kamille Bayer', 5, NULL, '2019-04-12 12:04:56', '2019-04-12 12:04:56'),
-(3, 'Karen Walter V', 'Reece Von', 'Janiya Dicki', 9, 'torey20@example.com', '$2y$10$PukciG88uQ3fJdtoSn945O4Bk0QXXC9yCC748UeLZwwlL.3dW7AlK', 'Johathan Hamill II', 10, NULL, '2019-04-12 12:05:09', '2019-04-12 12:05:09'),
-(4, 'Prof. Eriberto Schoen II', 'Jane Treutel', 'Michel Muller', 3, 'josiane.ritchie@example.org', '$2y$10$D.m9obRveEVKuDa7S9xJ8Oz3KyTmZwUivDlVH7.gnuz0PXZwMiDWO', 'Michaela Jakubowski', 8, NULL, '2019-04-12 12:05:09', '2019-04-12 12:05:09'),
-(5, 'Lolita Murray', 'Dr. Corbin Hirthe V', 'Blaise Heller', 2, 'craig60@example.net', '$2y$10$qkvyy1BPh.8jMqYJ6lrL2ughzaHX1LhKAil7oZyLZ0nz.SQ0XGyzW', 'Joaquin Pollich', 6, NULL, '2019-04-12 12:05:09', '2019-04-12 12:05:09'),
-(6, 'abdulwahab', 'moahemd', 'abdulwasayedhab', 110, 'tests@gmail.com', '$2y$10$QP8P21kf9dNz.N3YVSSuFuZ3m/aEhMp55cMdrEoxInXb2Z6GsL84S', '1', 2, 'vZPUIphXqv', '2019-04-12 12:05:09', '2019-04-12 12:05:09'),
-(7, 'ahmsdsed ali', 'mohsdsamed', 'timsdson', 334527, 'ayhaga@mgmail.com', 'asasa', 'year4', 1, NULL, '2019-04-12 18:32:43', '2019-04-12 18:32:43');
+INSERT INTO `students` (`id`, `firstname`, `lastname`, `username`, `card_id`, `email`, `password`, `year_id`, `course_id`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Birdie Kihn DVM', 'Mr. Diamond Grimes I', 'Gerard Bosco', 3, 'lmcglynn@example.com', '$2y$10$QpwbCSK8lwR8gaxb39L9/.fe2jYPYDsqo/5wJugZMKwSSeiw5u2nG', 3, 7, NULL, '2019-05-04 10:51:28', '2019-05-04 10:51:28'),
+(2, 'Bell Nienow V', 'Esmeralda Vandervort', 'Wilfrid Hamill', 5, 'agustin93@example.org', '$2y$10$AxC2HigAfvI7hmDcP.EIu.XpnYeZE1vXIwVb/GQdK7V1tOXUoFzw6', 4, 6, NULL, '2019-05-04 10:51:29', '2019-05-04 10:51:29'),
+(3, 'abdulwahab', 'moahemd', 'abdulwasayedhab', 110, 'tests@gmail.com', '$2y$10$cTUT0vPJNMZPQ23Jau77C.8oWe9gCDRw.TtJ1Z7Nz8TOv4/jMvJPS', 1, 2, 'tRtQjXRbOK', '2019-05-04 10:51:29', '2019-05-04 10:51:29');
 
 -- --------------------------------------------------------
 
@@ -300,7 +297,7 @@ CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_verified_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -312,8 +309,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'abdulwahab', 'tests@gmail.com', '2019-04-12 14:04:55', '$2y$10$suslL.dEbm1o6khzvg8JuOQr7Ezq1Xb/SQCCxNcMaWo61ZfRyVcri', 'kWoVcfKOSJ', '2019-04-12 12:04:55', '2019-04-12 12:04:55'),
-(2, 'abdulwahab', 'tests@gmail.com', '2019-04-12 14:05:08', '$2y$10$H5HBOnw0g19x/8hQeop3uuDbyV9k59r3rTd1Bc7jrVIcrgOyjc7lW', 'OO9mNlRxg8', '2019-04-12 12:05:08', '2019-04-12 12:05:08');
+(1, 'abdulwahab', 'tests@gmail.com', NULL, '$2y$10$a.JgVI/wfPmwmtPg6Sbj1et56vLhae7AC7zceawnb0k6D8U8riwGG', 'yy94g4bIig', '2019-05-04 10:51:28', '2019-05-04 10:51:28');
 
 --
 -- Indexes for dumped tables
@@ -337,7 +333,7 @@ ALTER TABLE `courses`
 ALTER TABLE `doctors`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `doctors_card_id_unique` (`card_id`),
-  ADD UNIQUE KEY `doctors_e_mail_unique` (`e_mail`);
+  ADD UNIQUE KEY `doctors_email_unique` (`email`);
 
 --
 -- Indexes for table `lectures`
@@ -369,7 +365,7 @@ ALTER TABLE `quizzes`
 ALTER TABLE `students`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `students_card_id_unique` (`card_id`),
-  ADD UNIQUE KEY `students_e_mail_unique` (`e_mail`);
+  ADD UNIQUE KEY `students_email_unique` (`email`);
 
 --
 -- Indexes for table `users`
@@ -427,13 +423,13 @@ ALTER TABLE `quizzes`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

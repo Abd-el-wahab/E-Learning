@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Student;
@@ -41,7 +42,8 @@ class StudentLoginController extends Controller
         $student->username = $request->input('username');
         $student->card_id = $request->input('card_id');
         $student->email = $request->input('email');
-        $student->password = bcrypt($request->input('password'));
+      //  $student->password = bcrypt($request->input('password'));  hana ana 3amlt da3del we khallato hash
+        $student->password = Hash::make($request->input('password'));
         $student->year_id = $request->input('year_id');
         $student->course_id = $request->input('course_id');
 
@@ -52,19 +54,7 @@ class StudentLoginController extends Controller
 
 
 
-        // $student = $request->isMethod('put') ? Student::findOrFail($request->id) : new Student;
 
-        // $id = $request->input('id');
-        // $fullname = $request->input('fullname');
-        // $student_id = $request->input('student_id');
-        // $e_mail = $request->input('e_mail');
-        // $password = $request->input('password');
-        // $year = $request->input('year');
-        // $course_id = $request->input('course_id');
-
-        // if($student->save()){
-        //     return new StudentResource($student);
-        // }
     }
 
     /**
@@ -103,47 +93,66 @@ function loginstudent()
         }
 
 
-function checkloginstudent(Request $request)
-        {
-
-        $this->validate($request , [
-            'email' => 'required|email',
-            'password' => 'required|alphaNum|min:3'
-
-        ]);
-
-        $user_data = array(
-            'email'  => $request->get('email'),
-            'password' => $request->get('password')
-           );
-
-        if(Auth::attempt($user_data))
-            {
-                
-            return'Successlogin Student';
-           //  return redirect('/main/successlogin');
-            // }
-            // else
-            // {
-            //   return back()->with('error', 'Wrong Login Details');
-            // }
-        }
-
-    }
+        // Da kan Validation lel login bas kan feh Error 3ashan mosh beshof aw ya3ml check lel password 3ala anno hash
 
 
+// function checkloginstudent(Request $request)
+//         {
 
-function successlogin()
+//         $this->validate($request , [
+//             'email' => 'required|email',
+//             'password' => 'required|alphaNum|min:3'
+
+//         ]);
+
+//         $user_data = array(
+//             'email'  => $request->get('email'),
+//             'password' => $request->get('password')
+//            );
+
+//         if(Auth::attempt($user_data))
+//             {
+//                // return $info;
+//                 // print_r($info);
+//             return'Successlogin Student';
+
+//         }
+//         else
+//         return 'Error Not Working';
+
+        
+
+//     }
+
+
+    function checkloginstudent(Request $request)
+{
+    $email = $request->email;
+    $password = $request->password;
+    $student = Student::where('email', $email)->firstOrFail();
+    if(Hash::check($password, $student->password))
     {
+    return response()->json([$student]);
+    }
+    else
+    return 'Error Not Working';
+}
+
+
+
+// function successlogin()
+//     {
        
-        return redirect()->away('https://www.google.com');
+//         return redirect()->away('https://www.google.com');
 
-    }
+//     }
 
-function logout()
-    {
-     Auth::logout();
-    return redirect('login');
-    }
+// function logout()
+//     {
+//      Auth::logout();
+//     return redirect('login');
+//     }
 
 }
+
+

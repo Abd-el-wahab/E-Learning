@@ -14,7 +14,7 @@ class UserLoginSeeder extends Seeder
     {
         User::create([
             'name'=>'abdulwahab',
-            'email'=>'tests@gmail.com',
+            'email'=>'test@gmail.com',
             'password'=>Hash::make('hello'),
             'remember_token'=> str_random(10)
 
