@@ -66,7 +66,7 @@ class LectureController extends Controller
                 $lecture = new Lecture();
                 $lecture->name = $name;
                 $lecture->save();
-                return"done";
+                return $name;
                 // return redirect()->route('login');
             };
                 return"Somthing Wrong";
