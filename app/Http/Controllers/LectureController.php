@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\lecture;
 class LectureController extends Controller
 {
 
@@ -22,7 +22,8 @@ class LectureController extends Controller
 
     public function dawnload($id){
         $dd = File::find($id);
-        return Storage::download($dd->path, $dd->title);
+        return Storage::download($dd->name);
+        // return Storage::download($dd->path, $dd->title);
     }
 
 
@@ -54,7 +55,22 @@ class LectureController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+         // dd($request);
+
+
+        if($file = $request->file('file')){
+
+            $name = $file->getClientOriginalName();
+            if($file->move('lecture' , $name)){
+                $lecture = new Lecture();
+                $lecture->name = $name;
+                $lecture->save();
+                return"done";
+                // return redirect()->route('login');
+            };
+                return"Somthing Wrong";
+        }
     }
 
     /**

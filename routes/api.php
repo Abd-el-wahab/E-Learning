@@ -93,6 +93,7 @@ Route::delete('quiz/{id}' , 'QuizController@destroy');
 
 
 // Lecture DropZone
+Route::post('/fileupload', 'LectureController@store');
 Route::post('/dropzone', 'LectureController@dropzone');
 Route::get('/dawnload', 'LectureController@dawnload');
 

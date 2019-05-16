@@ -29,3 +29,7 @@ Route::get('/logout', 'StudentLoginController@logout');
  
 // Route::post('/checklogin', 'DoctorLoginController@checklogin');
 // Route::get('/logout', 'DoctorLoginController@logout');
+
+
+// Route::post('/fileupload', 'LectureController@store');
+

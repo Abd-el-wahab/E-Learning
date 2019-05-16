@@ -93,6 +93,16 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <form action="/fileupload" method="post" enctype="multipart/form-data"> 
+
+                {{csrf_field()}}
+                    <div class="form-group">
+                        <input type="file" name="file" class="form-group">
+                    </div>
+                    <div class="form-group">
+                    <input type="submit" class="form-group">
+                    </div>
+                </form>
             </div>
         </div>
     </body>
