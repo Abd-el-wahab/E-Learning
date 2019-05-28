@@ -20,16 +20,22 @@ Route::get('/', function () {
 
 // Student login
 
-Route::get('/login', 'StudentLoginController@loginstudent');
-Route::post('/checklogin', 'StudentLoginController@checkloginstudent');
-Route::get('/main/successlogin', 'StudentLoginController@successlogin');
-Route::get('/logout', 'StudentLoginController@logout');
+// Route::get('/login', 'StudentLoginController@loginstudent');
+// Route::post('/checklogin', 'StudentLoginController@checkloginstudent');
+// Route::get('/main/successlogin', 'StudentLoginController@successlogin');
+// Route::get('/logout', 'StudentLoginController@logout');
 
 // Doctor login
  
 // Route::post('/checklogin', 'DoctorLoginController@checklogin');
 // Route::get('/logout', 'DoctorLoginController@logout');
 
+//  Route::get('lecture' , 'LectureController@index');
+  Route::post('/fileupload', 'LectureController@store');
+//  Route::get('/fileshow/{id}', 'LectureController@show');
+//  Route::delete('/lecture/{id}' , 'LectureController@destroy');
+//Route::get('/download', 'LectureController@download');
+Route::get('/lecture/{id}', 'LectureController@show');
+Route::get('/download', 'LectureController@downloadFile');
 
-// Route::post('/fileupload', 'LectureController@store');
 

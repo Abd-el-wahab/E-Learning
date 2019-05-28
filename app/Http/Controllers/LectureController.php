@@ -3,27 +3,56 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\lecture;
+use App\Http\Resources\Lecture as LectureResource;
+use DB;
+
 class LectureController extends Controller
 {
 
 
-    public function dropzone(Request $request){
-        $file = $request->file('file');
-        File::create([
-            'title' => $file->getClientOriginalName(),
-            'subject' =>'Algorthm',
-            'lecture_no'=>'2',
-            'select_year'=>'year1',
-            'file_upload_path' => $file->store('public/storage')
-        ]);
+    // public function dropzone(Request $request){
+    //     $file = $request->file('file');
+    //     File::create([
+    //         'title' => $file->getClientOriginalName(),
+    //         'subject' =>'Algorthm',
+    //         'lecture_no'=>'2',
+    //         'select_year'=>'year1',
+    //         'file_upload_path' => $file->store('public/storage')
+    //     ]);
 
+    // }
+
+    // public function file() {
+    //     $file = '../public/lecture/MyCv.docx';
+    //     $name = basename($file);
+    //     return response()->download($file, $name);
+    // }
+
+
+    public function downloadFile()
+    {
+    	$myFile = public_path("lecture/Students_sheet");
+    	$headers = ['Content-Type: application/pdf'];
+    	$newName = 'itsolutionstuff-pdf-file-'.time().'.pdf';
+
+
+    	return response()->download($myFile, $newName, $headers);
     }
 
-    public function dawnload($id){
-        $dd = File::find($id);
-        return Storage::download($dd->name);
+
+
+    public function download($id){
+        $dd = Lecture::find($id);
+        return Lecture::download($dd->name);
         // return Storage::download($dd->path, $dd->title);
+    }
+
+
+    public function downloadlec(){
+        $download = DB::table('lectures')->get();
+        return view('view',compact('$download'));
     }
 
 
@@ -34,7 +63,8 @@ class LectureController extends Controller
      */
     public function index()
     {
-        //
+        $lecture = Lecture::paginate(10); 
+        return LectureResource::collection($lecture);
     }
 
     /**
@@ -56,7 +86,6 @@ class LectureController extends Controller
     public function store(Request $request)
     {
 
-         // dd($request);
 
 
         if($file = $request->file('file')){
@@ -81,7 +110,8 @@ class LectureController extends Controller
      */
     public function show($id)
     {
-        //
+        $lecture = Lecture::findOrFail($id);
+        return new LectureResource($lecture);
     }
 
     /**
@@ -115,7 +145,10 @@ class LectureController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $lecture = Lecture::findOrFail($id);
+        if($lecture->delete()){
+        return new LectureResource($lecture);
+    }
     }
 
 

@@ -92,10 +92,19 @@ Route::delete('quiz/{id}' , 'QuizController@destroy');
 //Route::get('/logout', 'DoctorLoginController@logout');
 
 
-// Lecture DropZone
+
+// List Lecture
+Route::get('lecture' , 'LectureController@index');
+Route::get('/lecture/{id}', 'LectureController@show');
 Route::post('/fileupload', 'LectureController@store');
-Route::post('/dropzone', 'LectureController@dropzone');
-Route::get('/dawnload', 'LectureController@dawnload');
+Route::delete('lecture/{id}' , 'LectureController@destroy');
+//Route::get('/download', 'LectureController@downloadFile');
+
+
+
+// Route::post('/dropzone', 'LectureController@dropzone');
+// Route::get('/download', 'LectureController@download');
+
 
 
 

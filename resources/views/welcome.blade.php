@@ -103,7 +103,17 @@
                     <input type="submit" class="form-group">
                     </div>
                 </form>
+
+                <form method="get" action="/lecture/2">
+                <button type="submit">Select</button>
+                </form>
+                
+                <form method="get" action="/download">
+                <button type="submit">Download!</button>
+                </form>
+
             </div>
         </div>
     </body>
 </html>
+            
