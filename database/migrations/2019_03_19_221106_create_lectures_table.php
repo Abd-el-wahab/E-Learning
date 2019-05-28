@@ -15,13 +15,13 @@ class CreateLecturesTable extends Migration
     {
         Schema::create('lectures', function (Blueprint $table) {
             $table->bigIncrements('id');
-            // $table->integer('lecture_id');
-               $table->string('name');
-            // $table->string('subject');
-            // $table->integer('lecture_no');
-            // $table->string('select_year');
-            // $table->string('file_upload_path');
-            // $table->integer('course_id');
+             $table->integer('lecture_id');
+             $table->string('name');
+             $table->string('subject');
+             $table->integer('lecture_no');
+             $table->string('select_year');
+             $table->string('file_upload_path');
+             $table->integer('course_id');
             $table->timestamps();
         });
     }
