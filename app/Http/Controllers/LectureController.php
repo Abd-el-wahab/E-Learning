@@ -33,7 +33,7 @@ class LectureController extends Controller
 
     public function downloadFile()
     {
-    	$myFile = public_path("lecture/Students_sheet");
+    	$myFile = public_path("lecture/MyCv.docx");
     	$headers = ['Content-Type: application/pdf'];
     	$newName = 'itsolutionstuff-pdf-file-'.time().'.pdf';
 
