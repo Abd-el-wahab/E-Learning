@@ -36,7 +36,7 @@
 							<td>{{$down->subject}}</td>
 							<td>{{$down->created_at}}</td>
 							<td>
-							<a href="download/{{$down->name}}" download="{{$down->name}}">
+							<a href="lecture/{{$down->name}}" download="{{$down->name}}">
 								<button type="button" class="btn btn-primary">
 								<i class="glyphicon glyphicon-download">
 									Download
