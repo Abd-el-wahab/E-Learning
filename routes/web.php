@@ -36,6 +36,6 @@ Route::get('/', function () {
 //  Route::delete('/lecture/{id}' , 'LectureController@destroy');
 //Route::get('/download', 'LectureController@download');
 Route::get('/lecture/{id}', 'LectureController@show');
-Route::get('/download', 'LectureController@downloadFile');
+Route::get('/download', 'LectureController@downloadlec');
 
 

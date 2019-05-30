@@ -96,6 +96,15 @@
                 <form action="/fileupload" method="post" enctype="multipart/form-data"> 
 
                 {{csrf_field()}}
+                <div class="form-group">
+
+<div class="form-group">
+</div>
+
+
+
+                        <input type="text" name="subject" class="form-group">
+                    </div>
                     <div class="form-group">
                         <input type="file" name="file" class="form-group">
                     </div>

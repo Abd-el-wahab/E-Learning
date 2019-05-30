@@ -17,7 +17,7 @@ class CreateCoursesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('year_id');
             $table->string('name');
-            $table->integer('doctor_id');
+            $table->integer('doctor_id')->nullable();
             $table->timestamps();
         });
     }

@@ -98,7 +98,7 @@ Route::get('lecture' , 'LectureController@index');
 Route::get('/lecture/{id}', 'LectureController@show');
 Route::post('/fileupload', 'LectureController@store');
 Route::delete('lecture/{id}' , 'LectureController@destroy');
-Route::get('/download', 'LectureController@downloadFile');
+Route::get('/download', 'LectureController@downloadlec');
 
 
 

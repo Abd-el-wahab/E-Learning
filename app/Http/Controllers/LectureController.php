@@ -31,28 +31,45 @@ class LectureController extends Controller
     // }
 
 
-    public function downloadFile()
-    {
-    	$myFile = public_path("lecture/MyCv.docx");
-    	$headers = ['Content-Type: application/pdf'];
-    	$newName = 'itsolutionstuff-pdf-file-'.time().'.pdf';
+    //  <a href='lecture/$down->name' download='$down->name'>
+
+    // public function downloadFile()
+    // {
+    //     $lecture = Lecture::findOrFail($id);
+
+    //     $name = $lecture->name;
+    //     $myFile = public_path("lecture/" . $name);
+    // 	$headers = ['Content-Type: application/pdf'];
+    
+
+    //      return response()->download($myFile, $name, $headers);
+        
 
 
-    	return response()->download($myFile, $newName, $headers);
-    }
+
+
+    // 	// $myFile = public_path("lecture/MyCv.docx");
+    // 	// $headers = ['Content-Type: application/pdf'];
+    // 	// $newName = 'itsolutionstuff-pdf-file-'.time().'.pdf';
+
+
+    // 	// return response()->download($myFile, $newName, $headers);
+    // }
 
 
 
-    public function download($id){
-        $dd = Lecture::find($id);
-        return Lecture::download($dd->name);
-        // return Storage::download($dd->path, $dd->title);
-    }
+    // public function download($id){
+    //     $dd = Lecture::find($id);
+    //     return Lecture::download($dd->name);
+    //     // return Storage::download($dd->path, $dd->title);
+    // }
 
 
     public function downloadlec(){
-        $download = DB::table('lectures')->get();
-        return view('view',compact('$download'));
+
+        $downloads=DB::table('lectures')->get();
+    	return view('view',compact('downloads'));
+
     }
 
 
@@ -63,7 +80,7 @@ class LectureController extends Controller
      */
     public function index()
     {
-        $lecture = Lecture::paginate(10); 
+        $lecture = Lecture::paginate(100); 
         return LectureResource::collection($lecture);
     }
 
@@ -87,19 +104,38 @@ class LectureController extends Controller
     {
 
 
-
         if($file = $request->file('file')){
 
             $name = $file->getClientOriginalName();
+            $subject = $request->input('subject');
             if($file->move('lecture' , $name)){
                 $lecture = new Lecture();
                 $lecture->name = $name;
+                $lecture->subject = $request->input('subject');
                 $lecture->save();
-                return $name;
+                return;
                 // return redirect()->route('login');
             };
                 return"Somthing Wrong";
         }
+
+
+        // $title = new Lecture;
+        // $title->subject = $request->input('subject');
+        // $title->save(); 
+
+        // if($file = $request->file('file')){
+
+        //     $name = $file->getClientOriginalName();
+        //     if($file->move('lecture' , $name)){
+        //         $lecture = new Lecture();
+        //         $lecture->name = $name;
+        //         $lecture->save();
+        //         return $name;
+        //         // return redirect()->route('login');
+        //     };
+        //         return"Somthing Wrong";
+        // }
     }
 
     /**

@@ -17,7 +17,7 @@ class CreateLecturesTable extends Migration
             $table->bigIncrements('id');
             //  $table->integer('lecture_id');
                 $table->string('name');
-            //  $table->string('subject');
+                $table->string('subject')->nullable();
             //  $table->integer('lecture_no');
             //  $table->string('select_year');
             //  $table->string('file_upload_path');
