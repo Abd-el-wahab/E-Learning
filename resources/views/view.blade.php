@@ -30,7 +30,6 @@
 					</thead>
 
 					<tbody>
-
 					@foreach($downloads as $down)
 						<tr>
 							<td>{{$down->subject}}</td>
