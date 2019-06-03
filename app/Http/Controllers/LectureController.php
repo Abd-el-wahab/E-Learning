@@ -12,28 +12,12 @@ class LectureController extends Controller
 {
 
 
-    // public function dropzone(Request $request){
-    //     $file = $request->file('file');
-    //     File::create([
-    //         'title' => $file->getClientOriginalName(),
-    //         'subject' =>'Algorthm',
-    //         'lecture_no'=>'2',
-    //         'select_year'=>'year1',
-    //         'file_upload_path' => $file->store('public/storage')
-    //     ]);
-
-    // }
-
-    // public function file() {
-    //     $file = '../public/lecture/MyCv.docx';
-    //     $name = basename($file);
-    //     return response()->download($file, $name);
-    // }
+    
 
 
-    //  <a href='lecture/$down->name' download='$down->name'>
 
-    // public function downloadFile()
+    
+    // public function download()
     // {
     //     $lecture = Lecture::findOrFail($id);
 
@@ -43,26 +27,11 @@ class LectureController extends Controller
     
 
     //      return response()->download($myFile, $name, $headers);
-        
-
-
-
-
-    // 	// $myFile = public_path("lecture/MyCv.docx");
-    // 	// $headers = ['Content-Type: application/pdf'];
-    // 	// $newName = 'itsolutionstuff-pdf-file-'.time().'.pdf';
-
-
-    // 	// return response()->download($myFile, $newName, $headers);
     // }
 
 
 
-    // public function download($id){
-    //     $dd = Lecture::find($id);
-    //     return Lecture::download($dd->name);
-    //     // return Storage::download($dd->path, $dd->title);
-    // }
+
 
 
     public function downloadlec(){

@@ -102,11 +102,6 @@ Route::get('/download', 'LectureController@downloadlec');
 
 
 
-// Route::post('/dropzone', 'LectureController@dropzone');
-// Route::get('/download', 'LectureController@download');
-
-
-
 
 
 

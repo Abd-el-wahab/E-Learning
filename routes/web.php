@@ -34,8 +34,8 @@ Route::get('/', function () {
 //  Route::post('/fileupload', 'LectureController@store');
 //  Route::get('/fileshow/{id}', 'LectureController@show');
 //  Route::delete('/lecture/{id}' , 'LectureController@destroy');
-//Route::get('/download', 'LectureController@download');
-Route::get('/lecture/{id}', 'LectureController@show');
- Route::get('/download', 'LectureController@downloadlec');
+//  Route::get('/download', 'LectureController@download');
+//  Route::get('/lecture/{id}', 'LectureController@show');
+//  Route::get('/download', 'LectureController@downloadlec');
 
 
