@@ -69,6 +69,15 @@ class LectureController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function ahmedali(Request $request)
+    {
+        $subject = new Lecture;
+        $subject->subject = $request->input('subject');
+        $subject->save();
+    }
+
+
     public function store(Request $request)
     {
 

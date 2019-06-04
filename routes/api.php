@@ -102,6 +102,9 @@ Route::post('/fileupload', 'LectureController@store');
 Route::delete('lecture/{id}' , 'LectureController@destroy');
 // download Lecture
 Route::get('/download', 'LectureController@downloadlec');
+// ahmed ali
+Route::post('/ahmedali', 'LectureController@ahmedali');
+
 
 
 // Student Login
