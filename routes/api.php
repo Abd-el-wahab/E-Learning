@@ -81,6 +81,29 @@ Route::put('quiz' , 'QuizController@store');
 // Delete Post
 Route::delete('quiz/{id}' , 'QuizController@destroy');
 
+// list Courses
+Route::get('courses' , 'CourseController@index');
+// List Single course 
+// Route::get('course/{id}' , 'CourseController@show');
+// List Single Group Of Courses Using year_id
+Route::get('course/{id}' , 'CourseController@yearid');
+// Create course
+Route::post('create/course' , 'CourseController@store');
+// Delete course
+Route::delete('course/{id}' , 'CourseController@destroy');
+
+// List Lecture
+Route::get('lecture' , 'LectureController@index');
+// List Single Lecture
+Route::get('/lecture/{id}', 'LectureController@show');
+// Upload Lecture
+Route::post('/fileupload', 'LectureController@store');
+// Destroy Lecture
+Route::delete('lecture/{id}' , 'LectureController@destroy');
+// download Lecture
+Route::get('/download', 'LectureController@downloadlec');
+
+
 // Student Login
 // Route::post('/checklogin', 'StudentLoginController@checklogin');
 // Student logout
@@ -93,12 +116,7 @@ Route::delete('quiz/{id}' , 'QuizController@destroy');
 
 
 
-// List Lecture
-Route::get('lecture' , 'LectureController@index');
-Route::get('/lecture/{id}', 'LectureController@show');
-Route::post('/fileupload', 'LectureController@store');
-Route::delete('lecture/{id}' , 'LectureController@destroy');
-Route::get('/download', 'LectureController@downloadlec');
+
 
 
 

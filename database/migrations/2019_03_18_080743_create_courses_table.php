@@ -15,8 +15,9 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('year_id');
+            $table->integer('year_id')->nullable();
             $table->string('name');
+            $table->string('doctor_name')->nullable();
             $table->integer('doctor_id')->nullable();
             $table->timestamps();
         });
