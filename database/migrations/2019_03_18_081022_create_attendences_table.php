@@ -15,10 +15,10 @@ class CreateAttendencesTable extends Migration
     {
         Schema::create('attendences', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->boolean('confirmed');
-            $table->integer('attendence_id');
-            $table->integer('student_id');
-            $table->integer('course_id');
+            $table->string('confirmed');
+            $table->integer('attendence_id')->nullable();
+            $table->integer('student_id')->nullable();
+            $table->integer('course_id')->nullable();
             $table->timestamps();
         });
     }

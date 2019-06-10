@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class Post extends JsonResource
+class Event extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,9 +16,11 @@ class Post extends JsonResource
     {
         return [
             'id'=>$this->id,
-            'drname'=>$this->drname,
+            'name'=>$this->name,
             'description'=>$this->description,
-            'doctor_id'=>$this->doctor_id
+            'doctor_name'=>$this->doctor_name,
+            'start_date'=>$this->start_date,
+            'end_date'=>$this->end_date
        ];
     }
 }

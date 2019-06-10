@@ -156,11 +156,11 @@ class DoctorLoginController extends Controller
 
 // }
 
-// function logout()
-// {
-// Auth::logout();
-// return redirect('login');
-// }
+ function logout()
+ {
+ Auth::logout();
+ return ;
+ }
 
 
 }

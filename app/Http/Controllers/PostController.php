@@ -31,6 +31,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new Post;
+        $post->drname = $request->input('drname');
         $post->description = $request->input('description');
         $post->doctor_id = $request->input('doctor_id');
         $post->save();

@@ -31,6 +31,8 @@ Route::put('student' , 'StudentLoginController@store');
 Route::delete('student/{id}' , 'StudentLoginController@destroy');
 // Student Login
 Route::post('login' , 'StudentLoginController@checkloginstudent');
+// Student logout
+Route::get('/logout', 'StudentLoginController@logout');
 
 
 
@@ -53,6 +55,8 @@ Route::put('doctor' , 'DoctorLoginController@store');
 Route::delete('doctor/{id}' , 'DoctorLoginController@destroy');
 // Doctor Login
 Route::post('logindoctor' , 'DoctorLoginController@checklogindoctor');
+// Student Logout
+Route::get('/logout', 'DoctorLoginController@logout');
 
 
 
@@ -117,6 +121,8 @@ Route::post('/ahmedali', 'LectureController@ahmedali');
 // Doctor logout
 //Route::get('/logout', 'DoctorLoginController@logout');
 
+
+Route::post('/event', 'EventController@store');
 
 
 

@@ -39,3 +39,33 @@ Route::get('/', function () {
 //  Route::get('/download', 'LectureController@downloadlec');
 
 
+Route::get('qr-code-email', function () {
+
+    return QrCode::size(300)->email('abdelwahab.moh97@gmail.com', '', '');   
+});
+
+
+Route::get('qr-code-mobile', function () {
+
+    return QrCode::size(300)->phoneNumber('01143070901');
+});
+
+Route::get('qr-code-maps', function () {
+
+    return QrCode::size(300)->geo(29.982727, 31.282510);
+});
+
+Route::get('qr-code-text', function () {
+
+    $code = QrCode::size(300)->generate('Confirmed');
+    return $code;
+});
+
+Route::get('qr-code-test', function () {
+        
+    return 'ae';
+});
+
+
+
+
